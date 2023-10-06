@@ -33,6 +33,7 @@ reg: while (true) {
             if (checkLogin === regLogin) {
               let newPass = prompt("Create new password");
               regPass = newPass;
+              attempts = 3;
               continue auth;
             } else if (checkLogin !== regLogin) {
               let confirmation = confirm(
